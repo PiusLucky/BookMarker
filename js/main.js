@@ -25,8 +25,8 @@ function saveBookmark(e){
    		alert("You cannot leave the site name empty");
    		return false;
 
-   		// case sitename.length<=4:
-   		// alert("You need to input more than four digits!");
+   		// case sitename.length<=1:
+   		// alert("You need to input more than one digits!");
    		// return false;
    }
 
@@ -57,8 +57,8 @@ function saveBookmark(e){
    	alert("You must not include numerics in your website name!");
    	return false;
    }
-   if(sitename.length<=4){
-   	alert("Website name must be at least 5 characters! USER INPUT("+sitename.length+") Character(s) !");
+   if(sitename.length<=1){
+   	alert("Website name must be at least 2 characters! USER INPUT("+sitename.length+") Character(s) !");
    	return false;
    }
 
@@ -156,7 +156,7 @@ function fetchBookmarks(){
 		// bookmarksResults.innerHTML +=  '<br>'
 		// bookmarksResults.innerHTML +=  '<hr>'
       // += means adding to bookmarksResults.innerHTML set above as empty
-		bookmarksResults.innerHTML += ' <div class="well" > <h4> '+"<span>&nbsp;</span>"+name+ '<a class="btn btn-primary"  href="'+url+'">Visit</a> <a  onclick="deleteBookmark(\''+url+'\')" class="btn btn-danger" href="#">Delete</a></h4>'+'</div>';
+		bookmarksResults.innerHTML += ' <div class="well" > <h4> '+"<span>&nbsp;</span>"+name+ '<a class="btn bbtn-dangerprimary"  href="'+url+'">Visit</a> <a  onclick="deleteBookmark(\''+url+'\')" class="btn btn-xs btn-danger" href="#">Delete</a></h4>'+'</div>';
 	}
 
 } 
