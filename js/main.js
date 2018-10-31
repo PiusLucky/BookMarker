@@ -156,7 +156,7 @@ function fetchBookmarks(){
 		// bookmarksResults.innerHTML +=  '<br>'
 		// bookmarksResults.innerHTML +=  '<hr>'
       // += means adding to bookmarksResults.innerHTML set above as empty
-		bookmarksResults.innerHTML += ' <div class="well" > <h4> '+"<span>&nbsp;</span>"+name+ '<a class="btn bbtn-dangerprimary"  href="'+url+'">Visit</a> <a  onclick="deleteBookmark(\''+url+'\')" class="btn btn-xs btn-danger" href="#">Delete</a></h4>'+'</div>';
+		bookmarksResults.innerHTML += ' <div class="well" > <h4> '+"<span>&nbsp;</span>"+name+ '<a class="btn btn-xs btn-primary"  href="'+url+'">Visit</a> <a  onclick="deleteBookmark(\''+url+'\')" class="btn btn-xs btn-danger" href="#">Delete</a></h4>'+'</div>';
 	}
 
 } 
